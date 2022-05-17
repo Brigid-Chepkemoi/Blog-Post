@@ -1,0 +1,8 @@
+Hello ;
+
+Welcome to PITCH PERFECT App
+
+Thanks for signing up for our application.
+Feel free to add your Pitch and leave comments too.
+
+Thanks.

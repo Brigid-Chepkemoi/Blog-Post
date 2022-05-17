@@ -1,0 +1,93 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro %}
+
+
+<!-- Styles block -->
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+
+{% endblock %}
+
+<!-- Content block -->
+{% block content %}
+
+<style>
+
+
+
+    h2 {
+    font-family: 'Josefin Sans',
+    sans-serif;
+    font-size:25px;
+    }
+
+    h1,h2{
+        color: blue;
+    }
+
+    a{
+        font-family: 'Josefin Sans',
+    sans-serif;
+    font-size:24px;
+    color: rgb(0, 255, 55);
+    }
+
+    body{
+        background-color:white
+    }
+
+    .quote{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .quotes{
+        background-color:white;
+        margin-top: -20px;
+    }
+
+</style>
+
+<div class="container-fluid quotes text-center">
+
+    <h1>Welcome to SASSY BLOG POST</h1>
+
+    <h2>Start Blogging <br>
+        today!</h2>
+
+
+    <div class="quote">
+        <p style="font-weight:600;padding-left:50px">{{quote.quote}}</p>
+        <p style="color:brown;font-weight:600;padding-left:50px">{{quote.author}}</p>
+    </div>
+
+    <div class="row" style="margin-top:3%">
+        <a type="button" class="btn btn-success text-center" style="font-family: 'Charm',cursive;
+        font-size:25px;" href="{{url_for('main.new_blog')}}">
+            Create a New Blog
+        </a>
+
+    </div>
+
+</div>
+
+<div class="container">
+    <h2 class="card-title h1-responsive text-center" style="color:black;">Blogs</h2>
+    <hr>
+    <div class="row">
+        {{macro.displayBlogs(blogs)}}
+    </div>
+</div>
+
+{% endblock %}
+
+</html>

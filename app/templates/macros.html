@@ -1,0 +1,37 @@
+
+<body>
+
+{% macro displayBlogs(blogs_list)%}
+{%for blogs in blogs_list[::-1]%}
+
+<div class="col-md-12">
+    <div class="panel col-sm mt-2 p-3" style="background-color:gray; padding:3%;">
+        <div class="diplayblog column-md-4">
+                <h2 class="title" style="text-align:start">{{blogs.title}}</h2>
+            <h4 class="content" style="font-family: 'Charm',cursive; font-size:24px">
+                {{blogs.blog }}
+            </h4>
+            <p style="font-weight: 600; font-size:20px; color:rgb(0, 0, 0) "><span style="margin-right:3%"><span style="font-weight:600; font-size:20px; color:brown">Posted by :</span>
+                    {{blogs.user.author}} </span><span style="font-weight:600; font-size:20px; color:brown">Date :</span>{{blogs.date.strftime('%Y-%m-%d')}}
+            </p>
+        </div>
+
+        <div class="btn-group col-md-6">
+            <a href="{{url_for('main.delete_blog',id = blog.id, blog_id=blog.id)}}" type="button" style="border: none; margin-right: 3%;"
+                class=" btn btn-danger d-flex"> Delete
+            </a>
+
+            <a href="{{url_for('main.new_comment',id=blog.id)}}" type="button" style="border: none;"
+                class="btn btn-primary d-flex">
+                Comment</a>
+
+                <div></div>
+
+        </div>
+
+
+    </div>
+</div>
+{% endfor %}
+{%endmacro%}
+
