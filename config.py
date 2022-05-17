@@ -5,7 +5,7 @@ class Config:
     SECRET_KEY='peeiicdjghsbnasgkkhjhjjhreirmd'
     QUOTE_API_BASE_URL='http://quotes.stormconsultancy.co.uk/random.json'
     SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://brie:brie1240@localhost:5433/blogpost'
-    SQLALCHEMY_DATABASE_URI = 'postgres://afkosmpnqfmahg:d24b79eff851cb5ec387f6c9df597e0f10136a13c0140f0b062e1c59c34ec497@ec2-54-165-90-230.compute-1.amazonaws.com:5432/d82ptdjq85atrn'
+    SQLALCHEMY_DATABASE_URI = 'postgres://umttmwmodaorna:58d3bbb2ae1e234218b5ead7e5b18ef4b0394cd6f6b93f0c8bae64f0429814a1@ec2-52-86-115-245.compute-1.amazonaws.com:5432/d7ohuleca980bt'
     UPLOADED_PHOTOS_DEST='app/static/photos'
 
     #  email configurations
