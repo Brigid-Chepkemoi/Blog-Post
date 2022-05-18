@@ -29,6 +29,10 @@
                     <button type="button" class="btn btn-outline-success btn-lg"><a href="/new_comment/{{category.id}}">Comment</a></button> <button type="button" class="btn btn-outline-success btn-lg"><a href="/comments/{{category.id}}">View comments</a></button>
                     <button type="button" class="btn btn-warning bt-lg" (click)='upVoteButtonClick()'>UpVote</button>
                     <button type="button" class="btn btn-success bt-lg" (click)='downVoteButtonClick()'>DownVote</button>
+                    <div class="btn-group col-md-6">
+                     <a href="{{url_for('main.delete_blog',id = blog.id, blog_id=blog.id)}}" type="button" style="border: none; margin-right: 3%;"
+                        class=" btn btn-danger d-flex"> Delete
+                     </a>
                 </div>
             </div>
 
