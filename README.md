@@ -1,18 +1,19 @@
-# PITCH APPLICATION
+# BLOG POST APPLICATION
 
 
 ### By: Brigid Chepkemoi
 
 
 ## Description
-A Web application for creating pitches, viewing created pitches in different categories. It gives users the ability to vote a pitch and add their power pitches.
+A Web application for creating blogs, viewing created blogs. It gives users the ability to vote a blog and add their blogs,comment on blogs.
 
 ## Live Link
-https://elevator-pitches-app.herokuapp.com/
+https://post-blogs-app.herokuapp.com/
 ## Setup/Installation Requirements
 Install python 3
 Flask
 Bootstrap
+SQLALCEMY
 ## BDD
 
 The user is able to;
@@ -21,9 +22,9 @@ The user is able to;
 
 - Login to profile.
 
-- View Pitches in different categories.
+- View blogs.
 
-- Drop a pitch,comment,vote a pitch, downvote a pitch.
+- Drop a blog,comment,vote a blog, downvote a blog.
 
 
 ## Technologies
